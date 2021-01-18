@@ -6,7 +6,8 @@ library(lubridate)
 library(geosphere)
 
 # Reading the CSV file
-Ships_raw <- read.csv("ships.csv")
+# !! Note!! The initial CSV file was truncated down to the size lower than 25MB to provide the GitHub compatibility
+Ships_raw <- read.csv("ships_trunc.csv")
 
 # Creating a ship type list for the first drop-down menu
 Ship_type_list <- Ships_raw %>%
